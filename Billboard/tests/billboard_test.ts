@@ -17,6 +17,8 @@ Clarinet.test({
             Tx.contractCall('billboard','get-message', [], wallet_1.address),
         ])
 
+        console.log(block)
+
         assertEquals(block.receipts.length, 4);
         assertEquals(block.height, 2);
 
